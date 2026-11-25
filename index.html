@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bunutan Carnival 2026 – Exchange Gift ₱500</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Mountains+of+Christmas:wght@700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#14123a; --navy2:#1f1b5a; --red:#d92f45; --gold:#ffc83d; --cream:#fff6e0;
+  --green:#1e9e6a; --pink:#ff7aa8; --ink:#241c3f;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',system-ui,sans-serif;color:var(--cream);background:var(--navy);overflow-x:hidden;line-height:1.55}
+h1,h2,h3{font-family:'Fredoka',sans-serif;line-height:1.1}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+
+/* lights */
+.lights{position:absolute;left:0;right:0;top:0;height:46px;display:flex;justify-content:space-around;pointer-events:none;z-index:3}
+.lights i{width:14px;height:20px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;margin-top:14px;animation:tw 2.4s infinite ease-in-out;box-shadow:0 0 14px currentColor;background:currentColor;position:relative}
+.lights i::before{content:"";position:absolute;top:-9px;left:5px;width:4px;height:9px;background:#0b0a22}
+.lights i:nth-child(4n+1){color:#ff4d6a}.lights i:nth-child(4n+2){color:var(--gold);animation-delay:.4s}
+.lights i:nth-child(4n+3){color:#3ddc97;animation-delay:.8s}.lights i:nth-child(4n){color:#6ec1ff;animation-delay:1.2s}
+@keyframes tw{0%,100%{opacity:1}50%{opacity:.35}}
+.lights::before{content:"";position:absolute;left:0;right:0;top:8px;height:3px;background:#0b0a22;border-radius:3px}
+
+/* hero */
+.hero{position:relative;padding:110px 0 0;background:
+  radial-gradient(circle at 80% 10%,#4b2d8f55,transparent 50%),
+  linear-gradient(180deg,#1f1b5a 0%,#14123a 100%);text-align:center;overflow:hidden}
+.stars span{position:absolute;color:#fff;opacity:.8;font-size:12px;animation:tw 3s infinite}
+.badge{display:inline-block;background:var(--gold);color:var(--ink);font-family:'Fredoka';font-weight:600;padding:6px 16px;border-radius:99px;font-size:.95rem;transform:rotate(-2deg);box-shadow:0 4px 0 #b88a00}
+.hero h1{font-family:'Mountains of Christmas','Fredoka';font-size:clamp(2.8rem,10vw,5.6rem);margin:18px 0 6px;color:#fff;text-shadow:0 5px 0 var(--red),0 10px 30px #0008}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero p.sub{font-size:1.15rem;max-width:560px;margin:0 auto 22px;color:#ffeccc}
+.pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:26px}
+.pill{background:#ffffff14;border:1.5px dashed #ffffff55;border-radius:14px;padding:9px 14px;font-weight:700;font-size:.95rem}
+.btn{display:inline-block;border:0;cursor:pointer;font-family:'Fredoka';font-weight:600;font-size:1.2rem;color:#fff;background:var(--red);padding:15px 34px;border-radius:99px;box-shadow:0 6px 0 #8f1627;text-decoration:none;transition:.15s}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 #8f1627}
+.btn:disabled{opacity:.6}
+.hero svg.scene{display:block;width:100%;max-width:1100px;margin:30px auto 0}
+.ferris{transform-origin:550px 190px;animation:spin 40s linear infinite}
+.cab{transform-box:fill-box;transform-origin:center top;animation:spinr 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes spinr{to{transform:rotate(-360deg)}}
+
+/* countdown */
+.count{background:var(--gold);color:var(--ink);padding:18px 0;text-align:center;font-family:'Fredoka';font-weight:600;border-top:5px solid var(--red);border-bottom:5px solid var(--red)}
+.count b{font-size:1.5rem}
+.count span{display:inline-block;margin:0 8px}
+
+/* sections */
+section{padding:64px 0}
+h2{font-size:clamp(1.9rem,6vw,2.7rem);text-align:center;margin-bottom:10px}
+.lead{text-align:center;color:#ffe3b8;max-width:560px;margin:0 auto 34px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.step{background:var(--navy2);border-radius:22px;padding:22px;text-align:center;border:2px solid #ffffff1c}
+.step .n{width:46px;height:46px;border-radius:50%;background:var(--red);display:grid;place-items:center;margin:0 auto 10px;font-family:'Fredoka';font-weight:700;font-size:1.3rem;box-shadow:0 3px 0 #8f1627}
+.step h3{margin-bottom:6px}
+
+/* register */
+#register{background:repeating-linear-gradient(90deg,#1b1750 0 40px,#14123a 40px 80px)}
+.card{background:var(--cream);color:var(--ink);border-radius:26px;padding:30px 26px;max-width:520px;margin:0 auto;box-shadow:0 14px 0 #0006,0 0 0 6px var(--gold);position:relative}
+.card h3{font-size:1.5rem;margin-bottom:4px;color:var(--red)}
+label{display:block;font-weight:700;margin:14px 0 5px}
+input,textarea{width:100%;font:inherit;padding:13px 14px;border:2.5px solid #e2d3ad;border-radius:14px;background:#fff;color:var(--ink)}
+input:focus,textarea:focus{outline:none;border-color:var(--red)}
+small{color:#6b5f86}
+.card .btn{width:100%;margin-top:20px}
+.err{color:#b3122a;font-weight:700;margin-top:12px;min-height:1.2em}
+.closed{text-align:center}
+
+/* invitation */
+#invite{display:none}
+.ticket{max-width:720px;margin:0 auto;background:linear-gradient(135deg,#fff6e0,#ffe7b0);color:var(--ink);border-radius:26px;overflow:hidden;box-shadow:0 14px 0 #0006,0 0 0 6px var(--red)}
+.ticket .top{background:repeating-linear-gradient(90deg,var(--red) 0 36px,#fff 36px 72px);height:34px}
+.ticket .in{padding:28px 26px 34px;text-align:center}
+.ticket h2{color:var(--red);margin:6px 0}
+.ticket .row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:18px 0}
+.ticket .box{background:#fff;border-radius:16px;padding:12px 16px;border:2px dashed var(--red);min-width:150px}
+.ticket .box b{display:block;font-family:'Fredoka';font-size:1.1rem}
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}
+.photo{aspect-ratio:1;border-radius:16px;overflow:hidden;position:relative;background:#ddd}
+.photo img,.photo svg{width:100%;height:100%;object-fit:cover;display:block}
+.photo:nth-child(1){transform:rotate(-2deg)}.photo:nth-child(3){transform:rotate(2deg)}
+.photo span{position:absolute;bottom:0;left:0;right:0;background:#000a;color:#fff;font-size:.72rem;padding:3px;font-weight:700}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.gallery .photo{aspect-ratio:4/3;transform:none!important;border:4px solid #fff;box-shadow:0 8px 0 #0005}
+.note{font-size:.9rem;opacity:.85;margin-top:10px}
+
+/* rules */
+.rules{max-width:640px;margin:0 auto;display:grid;gap:10px}
+.rules div{background:#ffffff10;border-radius:14px;padding:12px 16px}
+footer{text-align:center;padding:34px 20px 50px;background:#0c0b28;color:#c9c2ee;font-size:.95rem}
+.confetti{position:fixed;top:-20px;width:10px;height:14px;z-index:99;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+@media(max-width:560px){.photos{gap:6px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="lights" id="lights"></div>
+  <div class="stars" id="stars"></div>
+  <div class="wrap">
+    <span class="badge">🎪 Exchange Gift · Online Secret Draw</span>
+    <h1>Gift Draw <em>Carnival</em></h1>
+    <p class="sub">Sign up, wait for the email telling you who you drew, then enjoy a buffet and rides! 🎁</p>
+    <div class="pills">
+      <div class="pill">🎁 Gift: ₱500</div>
+      <div class="pill">📅 Register by Nov 30</div>
+      <div class="pill">📧 Result via email</div>
+    </div>
+    <a class="btn" href="#register">Register now!</a>
+  </div>
+  <svg class="scene" viewBox="0 0 1100 330" aria-hidden="true">
+    <defs><linearGradient id="gr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2670"/><stop offset="1" stop-color="#14123a"/></linearGradient></defs>
+    <!-- tents -->
+    <g>
+      <polygon points="90,330 90,230 190,150 290,230 290,330" fill="#fff"/>
+      <polygon points="90,230 190,150 290,230" fill="#d92f45"/>
+      <path d="M90 230 L120 230 L190 150 L160 190Z M150 230 L190 230 L190 150Z" fill="#fff" opacity=".9"/>
+      <polygon points="190,150 190,120" stroke="#ffc83d" stroke-width="4"/><polygon points="190,120 215,130 190,140" fill="#ffc83d"/>
+      <rect x="165" y="260" width="50" height="70" rx="25" fill="#14123a"/>
+      <polygon points="800,330 800,240 900,165 1000,240 1000,330" fill="#ffefc2"/>
+      <polygon points="800,240 900,165 1000,240" fill="#1e9e6a"/>
+      <polygon points="900,165 900,135" stroke="#ffc83d" stroke-width="4"/><polygon points="900,135 925,145 900,155" fill="#ff7aa8"/>
+      <rect x="875" y="268" width="50" height="62" rx="25" fill="#14123a"/>
+    </g>
+    <!-- christmas trees -->
+    <g fill="#1e9e6a">
+      <polygon points="330,330 370,230 410,330"/><polygon points="338,270 370,200 402,270" fill="#26b87c"/><polygon points="346,225 370,170 394,225" fill="#2fd08d"/>
+      <polygon points="370,170 363,182 377,182" fill="#ffc83d"/>
+      <polygon points="700,330 740,240 780,330"/><polygon points="708,280 740,215 772,280" fill="#26b87c"/><polygon points="716,240 740,190 764,240" fill="#2fd08d"/>
+    </g>
+    <g><circle cx="360" cy="285" r="5" fill="#ff4d6a"/><circle cx="385" cy="300" r="5" fill="#ffc83d"/><circle cx="372" cy="250" r="4" fill="#6ec1ff"/><circle cx="730" cy="290" r="5" fill="#ffc83d"/><circle cx="752" cy="265" r="4" fill="#ff4d6a"/></g>
+    <!-- ferris wheel -->
+    <polygon points="520,330 550,190 580,330" fill="none" stroke="#c9c2ee" stroke-width="6" stroke-linejoin="round"/>
+    <g class="ferris">
+      <circle cx="550" cy="190" r="125" fill="none" stroke="#ffc83d" stroke-width="5"/>
+      <circle cx="550" cy="190" r="70" fill="none" stroke="#ff7aa8" stroke-width="3"/>
+      <g stroke="#ffc83d" stroke-width="3">
+        <line x1="550" y1="65" x2="550" y2="315"/><line x1="425" y1="190" x2="675" y2="190"/>
+        <line x1="462" y1="102" x2="638" y2="278"/><line x1="638" y1="102" x2="462" y2="278"/>
+      </g>
+      <g id="cabs"></g>
+    </g>
+    <circle cx="550" cy="190" r="12" fill="#d92f45"/>
+    <!-- ground -->
+    <rect y="322" width="1100" height="8" fill="#0c0b28"/>
+  </svg>
+</header>
+
+<div class="count" id="count">⏳ <span>loading…</span></div>
+
+<section id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p class="lead">Simple — no password needed.</p>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Register</h3><p>Enter your name, email and wishlist before <b>Nov 30</b>.</p></div>
+      <div class="step"><div class="n">2</div><h3>The draw</h3><p>After the deadline, the system automatically draws names among registered people only.</p></div>
+      <div class="step"><div class="n">3</div><h3>Check email</h3><p>You'll find out who you're <b>giving a ₱500 gift</b> to. 🤫</p></div>
+      <div class="step"><div class="n">4</div><h3>Eat &amp; Rides</h3><p>Join us at Vikings MOA, then rides! Bring your gift.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="register">
+  <div class="wrap">
+    <h2>Register 🎟️</h2>
+    <p class="lead">One entry per email. Registration closes after Nov 30.</p>
+    <div class="card" id="formCard">
+      <h3>Gift Draw Ticket</h3>
+      <form id="form" novalidate>
+        <label for="name">Name (or nickname)</label>
+        <input id="name" autocomplete="name" maxlength="60" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" autocomplete="email" maxlength="100" required>
+        <small>We'll email you who you drew here.</small>
+        <label for="wish">Wishlist / interests <small>(optional)</small></label>
+        <textarea id="wish" rows="3" maxlength="200" placeholder="e.g. loves coffee, books, socks, skincare…"></textarea>
+        <div class="err" id="err" role="alert"></div>
+        <button class="btn" id="submit" type="submit">Register ✨</button>
+      </form>
+      <div class="closed" id="closedMsg" style="display:none">
+        <h3>Registration is closed</h3>
+        <p>Nov 30 has passed. Check your email for your draw result.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="invite">
+  <div class="wrap">
+    <div class="ticket">
+      <div class="top"></div>
+      <div class="in">
+        <div class="badge">🎉 You're in!</div>
+        <h2 id="hello">Thank you!</h2>
+        <p>You're registered. On <b>Dec 1</b> you'll get an email telling you who to give a ₱500 gift to. Check your spam folder too.</p>
+        <hr style="border:0;border-top:2px dashed #d92f4555;margin:22px 0">
+        <h2>You're Invited: Dinner &amp; Rides</h2>
+        <p>Join us for the Vikings Luxury Buffet at SM Mall of Asia, followed by rides! 🎡</p>
+        <div class="row">
+          <div class="box"><small>Date</small><b id="evDate"></b></div>
+          <div class="box"><small>Time</small><b id="evTime"></b></div>
+          <div class="box"><small>Place</small><b>Vikings, SM MOA<br>Pasay City</b></div>
+        </div>
+        <div class="photos" id="photos"></div>
+        <p class="note">Bring your wrapped ₱500 gift. Everyone is welcome, whatever you believe! 🎄✨</p>
+      </div>
+      <div class="top"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>The Plan 🍽️ → 🎡</h2>
+    <p class="lead">Buffet first, then rides by the bay.</p>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Rules</h2>
+    <p class="lead">To keep it fair and fun.</p>
+    <div class="rules">
+      <div>🎁 Gift value: <b>₱500</b> (a little under or over is fine, but stay close).</div>
+      <div>🤫 Keep who you drew a secret until the exchange day.</div>
+      <div>📧 Only people who register before the end of Nov 30 are in the draw.</div>
+      <div>🎀 Wrap your gift and write the recipient's name on it.</div>
+      <div>🕊️ Open to everyone — please avoid gifts tied to anyone's beliefs.</div>
+    </div>
+  </div>
+</section>
+
+<footer>🎄 Merry Christmas &amp; Happy Holidays 🎪<br>Questions? Message the organizer.</footer>
+
+<script>
+/* ============ SETTINGS (edit here) ============ */
+const CONFIG = {
+  // Paste your Google Apps Script Web App URL here (see README). Empty = DEMO mode.
+  endpoint: "",
+  deadline: "2026-11-30T23:59:59+08:00",
+  event: { date: "Dec __, 2026 (to be announced)", time: "TBA" },
+  // Put your real photos in the photos/ folder and edit the file names here:
+  photos: [
+    { src: "photos/vikings.jpg",  label: "Vikings Buffet", art: "food" },
+    { src: "photos/moa-eye.jpg",  label: "MOA Eye",        art: "wheel" },
+    { src: "photos/rides.jpg",    label: "Rides",          art: "carousel" }
+  ]
+};
+/* ================================================= */
+
+// lights & stars
+const L=document.getElementById('lights');for(let i=0;i<26;i++)L.appendChild(document.createElement('i'));
+const S=document.getElementById('stars');for(let i=0;i<30;i++){const s=document.createElement('span');s.textContent=['✦','✧','·'][i%3];s.style.left=Math.random()*100+'%';s.style.top=(10+Math.random()*60)+'%';s.style.animationDelay=Math.random()*3+'s';S.appendChild(s)}
+// ferris cabins
+(function(){const g=document.getElementById('cabs');const cols=['#d92f45','#1e9e6a','#6ec1ff','#ff7aa8','#ffc83d','#a58bff','#ff9a3d','#3ddc97'];
+ for(let i=0;i<8;i++){const a=i*Math.PI/4,x=550+125*Math.sin(a),y=190-125*Math.cos(a);
+  g.insertAdjacentHTML('beforeend',`<g class="cab"><rect x="${x-11}" y="${y}" width="22" height="18" rx="5" fill="${cols[i]}"/><line x1="${x}" y1="${y}" x2="${x}" y2="${y-4}" stroke="#fff" stroke-width="2"/></g>`)}})();
+
+// art for photo fallbacks
+function art(kind){
+  const bg={food:'#ffb347',wheel:'#4b9cff',carousel:'#ff7aa8'}[kind]||'#ffc83d';
+  const icon={food:'🍽️',wheel:'🎡',carousel:'🎠'}[kind]||'🎁';
+  return `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="${bg}"/><circle cx="20" cy="20" r="3" fill="#fff8"/><circle cx="80" cy="30" r="2" fill="#fff8"/><circle cx="70" cy="80" r="3" fill="#fff8"/><text x="50" y="62" font-size="42" text-anchor="middle">${icon}</text></svg>`;
+}
+function photoEl(p){
+  const d=document.createElement('div');d.className='photo';
+  const img=new Image();img.alt=p.label;img.loading='lazy';img.src=p.src;
+  img.onerror=()=>{img.remove();d.insertAdjacentHTML('afterbegin',art(p.art))};
+  d.appendChild(img);const sp=document.createElement('span');sp.textContent=p.label;d.appendChild(sp);return d;
+}
+CONFIG.photos.forEach(p=>{document.getElementById('photos').appendChild(photoEl(p));document.getElementById('gallery').appendChild(photoEl(p))});
+document.getElementById('evDate').textContent=CONFIG.event.date;
+document.getElementById('evTime').textContent=CONFIG.event.time;
+
+// countdown / closed state
+const dl=new Date(CONFIG.deadline).getTime();
+function isClosed(){return Date.now()>dl}
+function tick(){
+  const el=document.getElementById('count');let t=dl-Date.now();
+  if(t<=0){el.innerHTML='🔒 Registration is closed';document.getElementById('form').style.display='none';document.getElementById('closedMsg').style.display='block';return}
+  const d=Math.floor(t/864e5),h=Math.floor(t%864e5/36e5),m=Math.floor(t%36e5/6e4),s=Math.floor(t%6e4/1e3);
+  el.innerHTML=`⏳ Registration closes in <span><b>${d}</b> days</span><span><b>${h}</b> hours</span><span><b>${m}</b> min</span><span><b>${s}</b> sec</span>`;
+}
+tick();setInterval(tick,1000);
+
+function confetti(){const c=['#d92f45','#ffc83d','#1e9e6a','#6ec1ff','#ff7aa8'];
+  for(let i=0;i<70;i++){const e=document.createElement('div');e.className='confetti';e.style.left=Math.random()*100+'vw';e.style.background=c[i%5];
+   e.style.animationDuration=(2+Math.random()*2.5)+'s';e.style.animationDelay=Math.random()*.6+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),5500)}}
+
+function showInvite(name){
+  document.getElementById('hello').textContent='Thank you, '+name+'! 🎄';
+  const inv=document.getElementById('invite');inv.style.display='block';
+  document.getElementById('formCard').style.display='none';
+  try{localStorage.setItem('bunutan_done',name)}catch(e){}
+  confetti();setTimeout(()=>inv.scrollIntoView({behavior:'smooth'}),150);
+}
+
+document.getElementById('form').addEventListener('submit',async ev=>{
+  ev.preventDefault();
+  const err=document.getElementById('err'),btn=document.getElementById('submit');err.textContent='';
+  const name=document.getElementById('name').value.trim(),email=document.getElementById('email').value.trim().toLowerCase(),wish=document.getElementById('wish').value.trim();
+  if(!name){err.textContent='Please enter your name.';return}
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){err.textContent='That email looks wrong. Please check it.';return}
+  if(isClosed()){err.textContent='Registration is closed.';return}
+  btn.disabled=true;btn.textContent='One moment…';
+  try{
+    if(!CONFIG.endpoint){await new Promise(r=>setTimeout(r,600));showInvite(name);return} // DEMO
+    const q=new URLSearchParams({action:'register',name,email,wish});
+    const r=await fetch(CONFIG.endpoint+'?'+q.toString());
+    const j=await r.json();
+    if(j.ok)showInvite(name);else err.textContent=j.error||'Something went wrong. Please try again.';
+  }catch(e){err.textContent='Could not connect. Please try again later.'}
+  finally{btn.disabled=false;btn.textContent='Register ✨'}
+});
+</script>
+</body>
+</html>
