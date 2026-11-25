@@ -40,7 +40,7 @@ A festive, carnival-and-Christmas themed website for **Team Ernie's** exchange g
 |---|---|
 | `index.html` | The website (registration form, countdown, invitation, gallery) |
 | `Code.gs` | Google Apps Script: saves registrations to a Sheet, runs the draw, sends emails via Gmail |
-| `photos/` | Put `vikings.jpg`, `moa-eye.jpg`, `rides.jpg` here. Drawings show until you do |
+| `photos/` | Site photos (`vikings.jpg`, `moa-eye.jpg`, `mall.jpg`) |
 
 ## 🛠️ Organizer setup (about 10 minutes, free)
 
